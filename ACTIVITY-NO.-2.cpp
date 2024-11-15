@@ -52,7 +52,7 @@ int main() {
     if (originalPrice && markupRate && salesTax && rent && electricityBill && waterBill && salary && itemQuantity && numEmployee >= 0) {
         
         //Display the input values
-        cout << "/nItem Original Price: " << originalPrice << endl;
+        cout << "\nItem Original Price: " << originalPrice << endl;
         cout << "Mark-up Percentage: " << markupRate << endl;
         cout << "Sales Tax Percentage: " << salesTax << endl << endl;
 
