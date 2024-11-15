@@ -84,5 +84,5 @@ int main() {
         cout << "You have entered an invalid number." << endl;
     }
 
-    return(0);
+    return 0;
 }
