@@ -76,7 +76,7 @@ int main() {
         cout << "The total quantity of items need to be sold to have break-even: ";
         cout << int(ceil(expenses / priceExTax)) << endl;
 
-        //Display the total net profit
+        //Calculate and Display the total net profit
         cout << "The total net profit: ";
         cout << fixed << setprecision(2) << revenue - expenses << endl;
     } else {
