@@ -81,7 +81,7 @@ int main() {
         cout << fixed << setprecision(2) << revenue - expenses << endl;
     } else {
         //Display error message for invalid output
-        cout << "You have entered an invalid number" << endl;
+        cout << "You have entered an invalid number." << endl;
     }
 
     return(0);
