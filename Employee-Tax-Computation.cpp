@@ -4,10 +4,11 @@ using namespace std;
 
 //Function to calculate and display results (monthly salary, marital status, tax rate, salary tax)
 void displayResults (float salary, string maritalStatus, float taxRate) {
-    cout << "\nEmployee Monthly Salary: " << fixed << setprecision(2) << salary << endl;
+    cout << fixed << setprecision(2);
+    cout << "\nEmployee Monthly Salary: " << salary << endl;
     cout << "Marital Status: " << maritalStatus << endl;
     cout << "Tax Rate: " << taxRate * 100 << "%" << endl;
-    cout << "Salary Tax: " << fixed << setprecision(2) << salary * taxRate << endl;
+    cout << "Salary Tax: " << salary * taxRate << endl;
 } 
 
 int main() {
