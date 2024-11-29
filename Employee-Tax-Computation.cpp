@@ -45,7 +45,7 @@ int main() {
                 displayResults(salary, "Single", 0.10);
             }
 
-        //Error message for invalid salary
+        //Error message for negative number
         } else {
             cout << "Error: The salary must be non-negative value only!" << endl;
         }
