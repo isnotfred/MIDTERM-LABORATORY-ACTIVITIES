@@ -19,25 +19,28 @@ int main() {
     cout << "Enter marital status (S for single / M for married): ";
     cin >> maritalStatus;
 
+    //Input and validate salary
+    cout << "Enter monthly salary (non-negative): ";  
+    if (!(cin >> salary)) {
+        cout << "Error: Invalid input! Please enter a number." << endl;
+        cin.clear(); 
+        cin.ignore(1000, '\n'); 
+        return 1;
+    }
+    
     //Validate marital status
     switch (maritalStatus) {
-
+        
     //Check if marital status is 'Single'
     case 's': case 'S':
-        //Input and validate salary
-        cout << "Enter monthly salary (non-negative): ";  
-        if (!(cin >> salary)) {
-            cout << "Error: Invalid input! Please enter a number." << endl;
-            cin.clear(); 
-            cin.ignore(1000, '\n'); 
-            return 1;
-        }
-
         //Check if non-negative and determine tax rate based on salary 
         if (salary >= 0) {
-            if (salary > 100000) displayResults(salary, "Single", 0.30);
-            else if (salary <= 100000 && salary >= 50000) displayResults(salary, "Single", 0.20);
-            else displayResults(salary, "Single", 0.10);
+            if (salary > 100000) 
+                displayResults(salary, "Single", 0.30);
+            else if (salary <= 100000 && salary >= 50000) 
+                displayResults(salary, "Single", 0.20);
+            else 
+                displayResults(salary, "Single", 0.10);
 
         //Error message for negative number
         } else 
@@ -46,20 +49,14 @@ int main() {
 
     //Check if marital status is 'Married'
     case 'M': case 'm':
-        //Input salary and validate input
-        cout << "Enter monthly salary (non-negative): ";
-        if (!(cin >> salary)) {
-            cout << "Error: Invalid input! Please enter a number." << endl;
-            cin.clear(); 
-            cin.ignore(1000, '\n');
-            return 1; 
-        }
-
         //Check if non-negative and determine tax rate based on salary
         if (salary >= 0) {
-            if (salary > 100000) displayResults(salary, "Married", 0.25);
-            else if (salary <= 100000 && salary >= 50000) displayResults(salary, "Married", 0.15);
-            else displayResults(salary, "Married", 0.05);
+            if (salary > 100000) 
+                displayResults(salary, "Married", 0.25);
+            else if (salary <= 100000 && salary >= 50000) 
+                displayResults(salary, "Married", 0.15);
+            else 
+                displayResults(salary, "Married", 0.05);
 
         //Error message for negative number
         } else
