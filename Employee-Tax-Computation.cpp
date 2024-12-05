@@ -27,10 +27,10 @@ int main() {
         //Input and validate salary
         cout << "Enter monthly salary (non-negative): ";  
         if (!(cin >> salary)) {
-        cout << "Error: Invalid input! Please enter a number." << endl;
-        cin.clear(); 
-        cin.ignore(1000, '\n'); 
-        return 1;
+            cout << "Error: Invalid input! Please enter a number." << endl;
+            cin.clear(); 
+            cin.ignore(1000, '\n'); 
+            return 1;
         }
 
         //Check if non-negative and determine tax rate based on salary 
@@ -49,10 +49,10 @@ int main() {
         //Input salary and validate input
         cout << "Enter monthly salary (non-negative): ";
         if (!(cin >> salary)) {
-        cout << "Error: Invalid input! Please enter a number." << endl;
-        cin.clear(); 
-        cin.ignore(1000, '\n');
-        return 1; 
+            cout << "Error: Invalid input! Please enter a number." << endl;
+            cin.clear(); 
+            cin.ignore(1000, '\n');
+            return 1; 
         }
 
         //Check if non-negative and determine tax rate based on salary
